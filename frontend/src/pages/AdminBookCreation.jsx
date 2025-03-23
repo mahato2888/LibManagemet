@@ -90,7 +90,7 @@ const AdminBookCreation = () => {
                 <form onSubmit={handleSubmit}>
                     <input type="text" name="title" placeholder="Book Title" onChange={handleChange} required />
 
-                    {/* <div className="input-group">
+                     <div className="input-group">
                         <select name="author" onChange={handleChange} required>
                             <option value="">Select Author</option>
                             {authors.map((author) => (
@@ -98,7 +98,7 @@ const AdminBookCreation = () => {
                             ))}
                         </select>
                         <button type="button" className="add-btn" onClick={() => setShowAuthorInput(true)}>+</button>
-                    </div> */}
+                    </div> 
 
                     <div className="input-group">
                         <select name="category" multiple onChange={handleCategoryChange} required>
