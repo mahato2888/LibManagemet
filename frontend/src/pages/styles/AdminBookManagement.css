@@ -1,0 +1,152 @@
+/* Admin Book Management Container */
+.admin-book-management {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 30px;
+    background: rgba(10, 10, 30, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 204, 255, 0.4), 0 0 30px rgba(255, 0, 195, 0.3);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0, 204, 255, 0.2);
+}
+
+.admin-book-management:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.6), 0 0 40px rgba(255, 0, 195, 0.5);
+}
+
+/* Heading */
+.admin-book-management h2 {
+    text-align: center;
+    color: #00ccff;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* Book List */
+.book-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Individual Book Item */
+.book-item {
+    background: linear-gradient(145deg, #0e153a, #1b2845);
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: all 0.3s;
+    border: 1px solid rgba(0, 204, 255, 0.2);
+}
+
+.book-item:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 12px rgba(0, 204, 255, 0.5), 0 0 20px rgba(255, 0, 195, 0.4);
+}
+
+/* Book Title */
+.book-item h3 {
+    color: #00ccff;
+    font-size: 24px;
+}
+
+/* Book Description */
+.book-item p {
+    color: #bbbbbb;
+    font-size: 15px;
+}
+
+/* Input Fields */
+.book-item input,
+.book-item textarea,
+.book-item select {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #e0e0e0;
+    transition: all 0.3s;
+    border: 1px solid rgba(0, 204, 255, 0.2);
+}
+
+.book-item input:focus,
+.book-item textarea:focus,
+.book-item select:focus {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #ff00c3;
+    outline: none;
+    box-shadow: 0 0 8px #ff00c3;
+}
+
+/* Book Actions (Buttons) */
+.book-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+/* Common Button Styles */
+.book-actions button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: white;
+}
+
+/* Edit Button */
+.edit-btn {
+    background: linear-gradient(45deg, #00ccff, #0090ff);
+}
+
+.edit-btn:hover {
+    background: linear-gradient(45deg, #0090ff, #00ccff);
+}
+
+/* Delete Button */
+.delete-btn {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}
+
+.delete-btn:hover {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+}
+
+/* Save Button */
+.save-btn {
+    background: linear-gradient(45deg, #27ae60, #2ecc71);
+}
+
+.save-btn:hover {
+    background: linear-gradient(45deg, #2ecc71, #27ae60);
+}
+
+/* Cancel Button */
+.cancel-btn {
+    background: linear-gradient(45deg, #bdc3c7, #2c3e50);
+}
+
+.cancel-btn:hover {
+    background: linear-gradient(45deg, #2c3e50, #bdc3c7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-book-management {
+        padding: 20px;
+    }
+
+    .book-actions {
+        flex-direction: column;
+        gap: 14px;
+    }
+}

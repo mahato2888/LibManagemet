@@ -1,0 +1,110 @@
+body {
+    background: radial-gradient(circle, #0d0d0d, #1a1a1a, #2a2a2a);
+    font-family: 'Roboto', sans-serif;
+    color: #e0e0e0;
+}
+
+/* Container */
+.books-list {
+    max-width: 1200px;
+    margin: 2.5rem auto;
+    padding: 30px;
+    background: rgba(30, 30, 50, 0.8);
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.4), 0 0 40px rgba(255, 0, 195, 0.4);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0, 204, 255, 0.2);
+}
+
+.books-list:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(0, 204, 255, 0.7), 0 0 60px rgba(255, 0, 195, 0.5);
+}
+
+/* Title */
+.books-list h2 {
+    text-align: center;
+    color: #00ccff;
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+}
+
+/* Book Container */
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Book Card */
+.book-card {
+    background: linear-gradient(135deg, #202040, #3a0ca3);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 204, 255, 0.3);
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(0, 204, 255, 0.2);
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.5), 0 0 30px rgba(255, 0, 195, 0.3);
+}
+
+/* Book Title */
+.book-card h3 {
+    margin-top: 14px;
+    font-size: 1.8rem;
+    color: #ff00c3;
+}
+
+/* Book Description */
+.book-card p {
+    font-size: 1rem;
+    margin: 8px 0;
+    color: #a0a0a0;
+}
+
+/* Book Information */
+.book-card strong {
+    color: #00ccff;
+    font-weight: bold;
+}
+
+/* Book Cover */
+.book-cover {
+    width: 220px;
+    height: 180px;
+    background: linear-gradient(145deg, #ff00c3, #00ccff);
+    border-radius: 14px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 0, 195, 0.3);
+}
+
+.book-cover:hover {
+    transform: scale(1.08);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .books-list {
+        padding: 20px;
+    }
+
+    .book-card {
+        padding: 20px;
+    }
+}

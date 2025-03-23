@@ -1,0 +1,102 @@
+/* Admin Signup Container */
+.admin-signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #0a0a0a, #121212, #1f1f1f);
+}
+
+/* Admin Signup Box */
+.admin-signup-box {
+    background: rgba(25, 25, 50, 0.85);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.4), 0 0 40px rgba(255, 0, 195, 0.4);
+    width: 380px;
+    margin-top: -6%;
+    text-align: center;
+    border: 1px solid rgba(0, 204, 255, 0.2);
+    transition: all 0.4s ease;
+}
+
+.admin-signup-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(0, 204, 255, 0.7), 0 0 60px rgba(255, 0, 195, 0.5);
+}
+
+/* Heading */
+.admin-signup-box h2 {
+    margin-bottom: 1.5rem;
+    color: #00ccff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Input Fields */
+.admin-signup-box input {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #e0e0e0;
+    outline: none;
+    transition: all 0.3s;
+    border: 1px solid rgba(0, 204, 255, 0.2);
+}
+
+.admin-signup-box input:focus {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #ff00c3;
+    box-shadow: 0 0 5px #ff00c3, 0 0 8px #00ccff;
+}
+
+/* Password Toggle Wrapper */
+.password-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Password Input */
+.password-wrapper input {
+    flex: 1;
+    padding-right: 40px;
+}
+
+/* Password Toggle Icon */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #ff00c3;
+    transition: all 0.3s;
+}
+
+.toggle-password:hover {
+    color: #00ccff;
+    transform: scale(1.1);
+}
+
+/* Submit Button */
+.admin-signup-box button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #00ccff, #ff00c3);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.admin-signup-box button:hover {
+    background: linear-gradient(90deg, #ff00c3, #00ccff);
+    transform: scale(1.03);
+}
